@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Caozuo</class>
+ <widget class="QMainWindow" name="Caozuo">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>732</width>
+    <height>592</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="upload">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>40</y>
+      <width>131</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font:75 20pt &quot;黑体&quot;;
+color:white;
+background-color:rgb(85,170,127);
+border-radius:5px;</string>
+    </property>
+    <property name="text">
+     <string>上传</string>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>16</width>
+      <height>16</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="download">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>150</y>
+      <width>131</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font:75 20pt &quot;黑体&quot;;
+color:white;
+background-color:rgb(85,170,127);
+border-radius:5px;</string>
+    </property>
+    <property name="text">
+     <string>下载</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="delete_ui">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>270</y>
+      <width>131</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font:75 20pt &quot;黑体&quot;;
+color:white;
+background-color:rgb(85,170,127);
+border-radius:5px;</string>
+    </property>
+    <property name="text">
+     <string>删除</string>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>16</width>
+      <height>16</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="flush">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>400</y>
+      <width>131</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font:75 20pt &quot;黑体&quot;;
+color:white;
+background-color:rgb(85,170,127);
+border-radius:5px;</string>
+    </property>
+    <property name="text">
+     <string>刷新</string>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>16</width>
+      <height>16</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="cancel_ui">
+    <property name="geometry">
+     <rect>
+      <x>629</x>
+      <y>489</y>
+      <width>91</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font:75 20pt &quot;黑体&quot;;
+color:white;
+background-color:rgb(85,170,127);
+border-radius:5px;</string>
+    </property>
+    <property name="text">
+     <string>退出</string>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>16</width>
+      <height>16</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="list_filenames">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>60</y>
+      <width>381</width>
+      <height>441</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-color: rgb(225, 222, 255);
+font: 14pt &quot;黑体&quot;;
+font-weight:bold;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>29</y>
+      <width>381</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 0, 0);
+font: 18pt &quot;黑体&quot;;
+font-weighr:bold;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0.04, stop:0.0625 rgba(48, 196, 255, 255));
+</string>
+    </property>
+    <property name="text">
+     <string>文件名列表</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>upload</sender>
+   <signal>clicked()</signal>
+   <receiver>Caozuo</receiver>
+   <slot>put()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>603</x>
+     <y>100</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>593</x>
+     <y>234</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>download</sender>
+   <signal>clicked()</signal>
+   <receiver>Caozuo</receiver>
+   <slot>get()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>594</x>
+     <y>190</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>586</x>
+     <y>545</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>flush</sender>
+   <signal>clicked()</signal>
+   <receiver>Caozuo</receiver>
+   <slot>refresh()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>573</x>
+     <y>417</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>529</x>
+     <y>494</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>delete_ui</sender>
+   <signal>clicked()</signal>
+   <receiver>Caozuo</receiver>
+   <slot>remove()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>618</x>
+     <y>301</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>712</x>
+     <y>293</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cancel_ui</sender>
+   <signal>clicked()</signal>
+   <receiver>Caozuo</receiver>
+   <slot>cancel()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>668</x>
+     <y>538</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>670</x>
+     <y>471</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>put()</slot>
+  <slot>get()</slot>
+  <slot>refresh()</slot>
+  <slot>remove()</slot>
+  <slot>cancel()</slot>
+ </slots>
+</ui>

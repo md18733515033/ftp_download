@@ -1,0 +1,8 @@
+os.path.getsize("文件名")
+
+os.listdir(path)
+    功能:获取文件列表
+os.path.isfile():
+    功能:判断一个文件是否为普通文件
+os.path.isdir()
+    功能:判断一个文件是否为目录
